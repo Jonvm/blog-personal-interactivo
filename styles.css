@@ -419,15 +419,36 @@ footer {
 }
 
 @media (max-width: 768px) {
+
     nav { flex-direction: column; gap: 1rem; }
     .logo img { height: 40px; }
-    .hero-content h1 { font-size: 2rem; }
     
-    .sudoku-grid { grid-template-columns: repeat(9, 30px); grid-template-rows: repeat(9, 30px); }
-    .sudoku-cell { width: 30px; height: 30px; font-size: 1rem; }
+
+    .hero-content h1 { font-size: 2rem; }
+    .hero-content { padding: 2rem !important; }
+    
+
+    .team-grid, .blog-grid { 
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .flip-card { 
+        height: 450px; 
+        max-width: 100%;
+    } 
+    
+    .sudoku-grid { 
+        grid-template-columns: repeat(9, 30px); 
+        grid-template-rows: repeat(9, 30px); 
+    }
+    .sudoku-cell { 
+        width: 30px; 
+        height: 30px; 
+        font-size: 1rem; 
+    }
     
     .game-controls { flex-direction: column; }
-    .flip-card { height: 450px; } 
 }
 
 .hero-btn {
