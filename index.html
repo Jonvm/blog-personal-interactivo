@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BProyecto Final </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <header class="glass-panel">
+        <nav>
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/UCSC%2C_Universidad_Católica_de_la_Santísima_Concepción.png" alt="Logo UCSC" style="height: 50px; vertical-align: middle;">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-nosotros">Nosotros</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#minijuego-section">Minijuego</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button id="theme-toggle" class="glass-btn"> Modo Oscuro</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-section">
+            <div class="hero-content glass-panel">
+                <h1>Bienvenidos a nuestro espacio</h1>
+                <p>Explora nuestros proyectos de ingeniería, descubre nuestros intereses tecnológicos y pon a prueba tu lógica con nuestro minijuego interactivo.</p>
+                <a href="#sobre-nosotros" class="hero-btn glass-btn">Conócenos</a>
+            </div>
+        </section>
+
+        <section id="sobre-nosotros">
+            <h2 class="section-title glass-panel">Nuestro Equipo</h2>
+            <div class="team-grid">
+                
+                <div class="flip-card floating" style="animation-delay: 0s;">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front glass-panel">
+                            <img src="imagen_gonzalo.jpg" alt="Foto Gonzalo" class="profile-pic">
+                            <h3>Gonzalo Molina</h3>
+                            <p class="role">Frontend Developer</p>
+                            <p class="short-bio">Apasionado por el diseño UI/UX y la creación de interfaces web atractivas y fluidas.</p>
+                        </div>
+                        <div class="flip-card-back glass-panel">
+                            <h3>Más sobre mí</h3>
+                            <p>Me especializo en CSS avanzado y frameworks modernos. En mi tiempo libre, me dedico a configurar equipos de audio de alta fidelidad para conseguir la acústica perfecta en casa.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card floating" style="animation-delay: 0.2s;">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front glass-panel">
+                            <img src="imagen_jona.jpg" alt="Foto Jonathan" class="profile-pic">
+                            <h3>Jonathan Villagra</h3>
+                            <p class="role">Backend & Bases de Datos</p>
+                            <p class="short-bio">Especialista en lógica de negocios, estructuración de datos y persistencia NoSQL.</p>
+                        </div>
+                        <div class="flip-card-back glass-panel">
+                            <h3>Más sobre mí</h3>
+                            <p>Domino Python y MongoDB. Siempre busco optimizar consultas y chamullar en clases según el ramo lo requiera, en mis tiempos libres me dedico a quejarme.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card floating" style="animation-delay: 0.4s;">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front glass-panel">
+                            <img src="imagen_alexis.jpg" alt="Foto Alexis" class="profile-pic">
+                            <h3>Alexis Pulgar</h3>
+                            <p class="role">DevOps & Arquitectura</p>
+                            <p class="short-bio">Encargado del despliegue en la nube, control de versiones y mantenimiento de hardware.</p>
+                        </div>
+                        <div class="flip-card-back glass-panel">
+                            <h3>Más sobre mí</h3>
+                            <p>Aseguro que nuestros proyectos estén siempre online. Me interesa la ciberseguridad, el rendimiento de servidores y, como hobby poco común, disfruto coleccionar y analizar perfumes.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2 class="section-title glass-panel">Lo que hacemos</h2>
+            <div class="blog-grid">
+                <article class="blog-post glass-panel">
+                    <h3>Desarrollo de Soluciones de Software</h3>
+                    <p>Diseñamos y programamos aplicaciones enfocadas en resolver necesidades reales, desde sistemas de inventario municipal hasta plataformas de gestión integral.</p>
+                </article>
+                <article class="blog-post glass-panel">
+                    <h3>Integración de Tecnologías Web</h3>
+                    <p>Aplicamos conocimientos en Python, Django y CSS para transformar requerimientos técnicos en interfaces funcionales, responsivas y amigables para el usuario.</p>
+                </article>
+                <article class="blog-post glass-panel">
+                    <h3>Optimización e Infraestructura</h3>
+                    <p>Nos dedicamos al mantenimiento de hardware y despliegue de soluciones en la nube, asegurando que cada proyecto sea robusto, escalable y eficiente.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="multimedia">
+            <h2 class="section-title glass-panel">Recursos Multimedia</h2>
+            <div class="media-container glass-panel">
+                <button id="music-btn" class="glass-btn">🎵 Reproducir Música de Fondo</button>
+                <audio id="bg-music" loop>
+                    <source src="musica.mp3" type="audio/mpeg">
+                </audio>
+                
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qthxa7m_B4E?si=n-ZPLGfk7pyjSrdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="minijuego-section">
+            <h2 class="section-title glass-panel">Minijuego: Sudoku Lógico</h2>
+            <div class="game-container glass-panel">
+                <p>Completa el tablero. ¡Cuidado, solo tienes 3 vidas!</p>
+                
+                <h3 id="vidas-display" style="margin: 15px 0;">Vidas: ❤️❤️❤️</h3>
+                
+                <div id="sudoku-board" class="sudoku-grid"></div>
+                
+                <div class="game-controls">
+                    <button id="reset-sudoku-btn" class="glass-btn">Reiniciar</button>
+                    <button id="how-to-play-btn" class="glass-btn">📖 Cómo Jugar</button>
+                </div>
+                <p id="sudoku-message"></p>
+            </div>
+
+            <div id="how-to-modal" class="modal-overlay">
+                <div class="modal-content glass-panel">
+                    <span id="close-modal-btn" class="close-btn">&times;</span>
+                    <h3>Cómo jugar Sudoku</h3>
+                    <div class="modal-body">
+                        <p>El objetivo es rellenar la cuadrícula de 9x9 con números del 1 al 9.</p>
+                        <ul>
+                            <li>No repetir números en <strong>filas, columnas o cuadrantes de 3x3</strong>.</li>
+                            <li>Si te equivocas, perderás una vida.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2 class="section-title glass-panel">Contáctanos</h2>
+            <form id="contact-form" class="glass-panel">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required class="glass-input">
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" required class="glass-input">
+                </div>
+                <div class="form-group">
+                    <label for="consulta">Tipo de Consulta:</label>
+                    <select id="consulta" class="glass-input">
+                        <option value="general">General</option>
+                        <option value="proyecto">Propuesta de Proyecto</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" rows="5" required class="glass-input" placeholder="Escribe tu consulta aquí..."></textarea>
+                </div>
+                <button type="submit" class="glass-btn">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="glass-panel">
+        <p>&copy; 2026 El mejor grupo de Frontend y Base de Datos.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
